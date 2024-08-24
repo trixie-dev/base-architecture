@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HArchitecture.ECA
+namespace ECA
 {
     public interface IEntity
     {

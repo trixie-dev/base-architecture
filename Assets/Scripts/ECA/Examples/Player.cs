@@ -1,5 +1,4 @@
-using HArchitecture.ECA;
-namespace HArchitecture.Examples
+namespace ECA.Examples
 {
     public class Player : Entity
     {
@@ -11,7 +10,7 @@ namespace HArchitecture.Examples
         public override void Initialize(int entityId)
         {
             base.Initialize(entityId);
-        
+            // component registration
             Components
                 .Add<EntityComponentExample>()
                 .Add<EntityInput>()

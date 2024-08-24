@@ -1,7 +1,6 @@
-using HArchitecture.ECA;
 using UnityEngine;
 
-namespace HArchitecture.Examples
+namespace ECA.Examples
 {
     public class EntityMover : EntityComponent
     {

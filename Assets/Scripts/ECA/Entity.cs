@@ -1,7 +1,6 @@
-using HArchitecture;
 using UnityEngine;
 
-namespace HArchitecture.ECA
+namespace ECA
 {
     public class Entity : MonoBehaviour, IEntity
     {

@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using HArchitecture;
 
-namespace HArchitecture.ECA
+namespace ECA
 {
     /// <summary>
     /// Components is a class that stores, initializes, and updates all entity components.

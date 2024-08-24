@@ -1,11 +1,9 @@
+using ECA;
 using HArchitecture.ECA;
-using UnityEngine;
-using UnityEngine.Serialization;
 
-
-namespace HArchitecture.Examples
+namespace Characters
 {
-    public class EntityComponentExample : EntityComponent
+    public class PlayerInput : EntityComponent
     {
         public override void Initialize(IEntity entity)
         {

@@ -1,8 +1,6 @@
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.Events;
 
-namespace HArchitecture.ECA
+namespace ECA
 {
     /// <summary>
     /// EntityComponent is a class used to create default components for entities.

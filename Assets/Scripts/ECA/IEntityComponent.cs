@@ -1,6 +1,6 @@
 using UnityEngine.Events;
 
-namespace HArchitecture.ECA
+namespace ECA
 {
     /// <summary>
     /// If you need to create a special component for an entity, use this interface.
