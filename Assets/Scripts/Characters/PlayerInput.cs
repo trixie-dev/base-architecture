@@ -1,5 +1,4 @@
 using ECA;
-using HArchitecture.ECA;
 
 namespace Characters
 {
