@@ -1,8 +1,8 @@
-using ECA;
+using EMA;
 
 namespace Characters
 {
-    public class PlayerInput : EntityComponent
+    public class PlayerInput : EntityModule
     {
         public override void Initialize(IEntity entity)
         {

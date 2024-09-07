@@ -1,5 +1,5 @@
-using ECA;
-using ECA.Examples;
+using EMA;
+using EMA.Examples;
 
 namespace Characters
 {
@@ -9,8 +9,8 @@ namespace Characters
         {
             base.Initialize(entityId);
 
-            Components
-                .Add<EntityComponentExample>()
+            Modules
+                .Add<EntityModuleExample>()
                 .Initialize(this);
 
             // events 
