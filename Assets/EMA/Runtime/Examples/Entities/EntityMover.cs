@@ -4,8 +4,8 @@ namespace EMA.Examples
 {
     public class EntityMover : EntityModule
     {
-        private float _speed = 5f;
-        private Vector2 _desiredDirection;
+        public float _speed = 5f;
+        public Vector2 _desiredDirection;
 
         public override void Initialize(IEntity entity)
         {

@@ -9,7 +9,7 @@ namespace Characters
         {
             base.Initialize(entityId);
 
-            Modules
+            ModulesManager
                 .Add<EntityModuleExample>()
                 .Initialize(this);
 

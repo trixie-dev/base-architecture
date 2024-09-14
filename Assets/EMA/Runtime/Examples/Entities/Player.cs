@@ -11,7 +11,7 @@ namespace EMA.Examples
         {
             base.Initialize(entityId);
             // component registration
-            Modules
+            ModulesManager
                 .Add<EntityModuleExample>()
                 .Add<EntityInput>()
                 .Add<EntityMover>()
@@ -19,6 +19,8 @@ namespace EMA.Examples
         
             // events 
             GetModule<EntityInput>().OnInputReceivedEvent += GetModule<EntityMover>().Move;
+            
+            Initialized();
         }
     
         public override void Update()

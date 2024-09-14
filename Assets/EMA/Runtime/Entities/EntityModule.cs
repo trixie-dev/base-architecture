@@ -1,10 +1,12 @@
+using System;
 using UnityEngine.Events;
 
 namespace EMA
 {
     /// <summary>
     /// EntityComponent is a class used to create default components for entities.
-    /// </summary>  
+    /// </summary>
+    [Serializable]
     public abstract class EntityModule : IEntityModule
     {
         public IEntity Entity { get; set; }

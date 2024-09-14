@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Use when you don't need to inherit from another MonoBehaviour class
+/// </summary>
 public class SingletonComponent<T> : MonoBehaviour where T : MonoBehaviour
 {
     private static T _instance;
@@ -25,8 +28,7 @@ public class SingletonComponent<T> : MonoBehaviour where T : MonoBehaviour
             return _instance;
         }
     }
-
-    // make dont destroy on load
+    
     protected void DoNotDestroyOnLoad()
     {
         if (_instance == null)

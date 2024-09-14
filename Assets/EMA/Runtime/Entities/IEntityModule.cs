@@ -1,10 +1,11 @@
+using System;
 using UnityEngine.Events;
 
 namespace EMA
 {
     /// <summary>
     /// If you need to create a special component for an entity, use this interface.
-    /// </summary>  
+    /// </summary>
     public interface IEntityModule
     {
         public IEntity Entity { get; set; }
