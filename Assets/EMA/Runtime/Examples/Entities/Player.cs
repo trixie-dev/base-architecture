@@ -13,12 +13,15 @@ namespace EMA.Examples
             // component registration
             ModulesManager
                 .Add<EntityModuleExample>()
+                .Add<EntityStats>()
+                .Add<EngineModule>()
                 .Add<EntityInput>()
                 .Add<EntityMover>()
                 .Initialize(this);
         
             // events 
-            GetModule<EntityInput>().OnInputReceivedEvent += GetModule<EntityMover>().Move;
+            GetModule<EntityInput>().OnInputReceivedEvent += GetModule<EntityMover>().SetDirection;
+            GetModule<EngineModule>().OnMoveSpeedChangedEvent += GetModule<EntityMover>().SetMoveSpeed;
             
             Initialized();
         }
